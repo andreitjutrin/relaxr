@@ -31,84 +31,153 @@ Developer @GA in LDN
   clear: both;
 }
 
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
-
-.alignleft {
-  float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
-  width: 450px;
-}
 
 /******************************************
-/* BASE STYLES, container formats
+/* Cross-html page styles
 /*******************************************/
 
+/******************************************
+/* Body styles
+/*******************************************/
 body {
-  color: #000;
-  font-size: 12px;
+  font-size: 12px
   line-height: 1.4;
-  font-family: Open Sans, sans-serif;
-  background-size: cover;
-  max-width: 800px;
+  font-family: Open Sans;
+  max-width: 900px;
   margin: 20px auto 0 auto;
 }
 
-section,
-article,
-header,
-footer {
-  padding: 10px;
-}
-
-.footer {
-  background-color: #121212;
-  color: #f9e42e;
-  text-align: center;
-}
-
-.copyright {
-  color: white;
-  text-align: center;
-  background-color: #121212;
-  font-size: 9px;
-}
-
-.waves {
-  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
-  padding-bottom: 20px;
-}
-
-.middlebody {
-  background-color: #f0efef;
-  height: 220px;
-}
-
-
-.thirdbox {
-  background-color: #f9e42e;
-  padding: 20px;
-  border-width: 2px;
-}
-
-#container {
-  width: 100%;
-  margin: auto;
-  height: 400px;
-  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+.bodyindex {
+  color: #000;
   background-size: cover;
 }
 
+.bodyblog {
+  color: #000;
+  background-size: cover;
+  background-color: #f0efef;
+}
+
+
+/******************************************
+/* Header and inside header styles
+/*******************************************/
 header {
   color: #E3E2E8;
  }
+
+.headerblog {
+  background-color: #033048;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navigation {
+  float: right;
+  width: 80%;
+  padding-right: 5%;
+  text-align: right;
+}
+.navigation ul {
+   list-style: none;
+   margin: 5px;
+   padding: 0;
+   font-size: 24px;
+  }
+.navigation ul li {
+  display: inline;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.navigation ul li a {
+  color: #f9e42e;
+  text-decoration: none;
+}
+.navigation ul li a:hover {
+  color: green;
+}
+
+.h1blog {
+  color: white;
+  font-weight: 900;
+  margin: 0;
+  float: left;
+  width: 20%;
+  padding-left: 10%;
+ }
+
+/******************************************
+/* Body section, articles, etc..
+/*******************************************/
+
+.blogmain1 {
+  width: 80%;
+  float: left;
+  padding-left: 10%;
+}
+
+.blogmain1 img,
+.blogmain3 img {
+  width: 100%;
+}
+
+.blogmain1 a,
+.blogmain3 a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+}
+
+.blogmain1 a:hover,
+.blogmain3 a:hover,
+.blogmain4 a:hover {
+  text-decoration: underline;
+}
+
+.blogmain2 {
+  width: 20%;
+  float: right;
+  padding-right: 5%;
+}
+.blogmain2 ul {
+   list-style: none;
+   font-size: 24px;
+   margin: 0;
+   padding: 0;
+}
+.blogmain2 ul li a {
+  text-decoration: none;
+  }
+
+.blogmain2 ul li a:hover {
+  color: green;
+}
+
+.blogmain3 {
+  width: 80%;
+  float: left;
+  clear: both;
+  padding-left: 10%
+}
+
+.blogmain4 {
+  width: 20%;
+  float: right;
+}
+
+.blogmain4 img {
+  width: 90%;
+}
+
+
 /******************************************
 /* Text, font, color, etc.. related
 /*******************************************/
 
-h1,
+h1 {
+  font-size: 32px;
+}
 h2 {
     font-size: 24px;
 }
@@ -118,7 +187,7 @@ h3 {
     font-weight: 600;
 }
 
-h1 {
+.h1index {
   padding-top: 10px;
   padding-bottom: 40px;
   text-indent: 80px;
@@ -156,6 +225,11 @@ ul li {
   font-size: 18px;
   font-weight: 600;
 }
+
+/******************************************
+/* Layout, positioning
+/*******************************************/
+
 
 /******************************************
 /* Button details
@@ -199,3 +273,54 @@ text-align:center;
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+
+section,
+article,
+footer {
+  padding: 10px;
+}
+
+.footer {
+  background-color: #121212;
+  color: #f9e42e;
+  text-align: center;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  background-color: #121212;
+  font-size: 9px;
+}
+
+.waves {
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  padding-bottom: 20px;
+}
+
+.middlebody {
+  background-color: #f0efef;
+  height: 220px;
+}
+
+
+.thirdbox {
+  background-color: #f9e42e;
+  padding: 20px;
+  border-width: 2px;
+  clear: both;
+}
+
+#container {
+  width: 100%;h
+  margin: auto;
+  height: 400px;
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+}
+
+
+
+
+
